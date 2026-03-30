@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Red Bull Racing",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Red_Bull_Racing_Logo_2026.svg/250px-Red_Bull_Racing_Logo_2026.svg.png",
+    "car": "https://media.formula1.com/image/upload/t_16by9Centre/f_auto/q_auto/v1768531224/fom-website/2026/Red%20Bull/SI202601150723.jpg",
+    "drivers": ["Max Verstappen", "Isack Hadjar"],
+    "principal": "Christian Horner",
+    "ceo": "Oliver Mintzlaff"
+  },
+  {
+    "name": "Mercedes-AMG Petronas",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Mercedes-AMG_Petronas_F1_Team_logo_%282026%29.svg/960px-Mercedes-AMG_Petronas_F1_Team_logo_%282026%29.svg.png",
+    "car": "https://www.the-race.com/content/images/size/w1200/2025/06/Merc-W17-2026-concept-teal-floor.jpg",
+    "drivers": ["George Russell", "Kimi Antonelli"],
+    "principal": "Toto Wolff",
+    "ceo": "Toto Wolff"
+  },
+  {
+    "name": "Scuderia Ferrari",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3620_by_Stepro.jpg/960px-2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3620_by_Stepro.jpg",
+    "car": "https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000001/fom-website/2026/Ferrari/G_V027BWQAASNgK.webp",
+    "drivers": ["Charles Leclerc", "Lewis Hamilton"],
+    "principal": "Frédéric Vasseur",
+    "ceo": "Benedetto Vigna"
+  },
+  {
+    "name": "McLaren Formula 1 Team",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/6/66/McLaren_Racing_logo.svg",
+    "car": "https://www.motorsportmagazine.com/wp-content/uploads/2026/02/MCL40_LN1_Right_Front-800x450.jpg",
+    "drivers": ["Lando Norris", "Oscar Piastri"],
+    "principal": "Andrea Stella",
+    "ceo": "Zak Brown"
+  },
+  {
+    "name": "Aston Martin Aramco",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Aston_Martin_Aramco_2024_logo.png/250px-Aston_Martin_Aramco_2024_logo.png",
+    "car": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-D4beockhOR7eIhx3v_uQQnvIxFDIWq8FSg&s",
+    "drivers": ["Fernando Alonso", "Lance Stroll"],
+    "principal": "Mike Krack",
+    "ceo": "Martin Whitmarsh"
+  },
+  {
+    "name": "BWT Alpine F1 Team",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8ymk0ZB-Ln4AH6LhVHz8sLV4dkwV3xIkU0w&s",
+    "car": "https://cdn.racingnews365.com/2026/Launches/Alpine/BWT-Alpine-Formula-One-Team-BWT-Alpine-Formula-One-Team-2026-Press-Pack.jpg?v=1769169307&width=1092&height=683&quality=85&crop=4602%2C2878%2C261%2C0",
+    "drivers": ["Pierre Gasly", "Franco Colapinto"],
+    "principal": "Oliver Oakes",
+    "ceo": "Philippe Krief"
+  },
+  {
+    "name": "Williams Racing",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Atlassian_Williams_F1_Team_logo.svg/500px-Atlassian_Williams_F1_Team_logo.svg.png",
+    "car": "https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000001/fom-website/2026/Williams/f34h_v4-Sainz_169.webp",
+    "drivers": ["Alex Albon", "Carlos Sainz"],
+    "principal": "James Vowles",
+    "ceo": "Matthew Savage"
+  },
+  {
+    "name": "Visa Cash App Racing Bulls",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/VCARB_F1_logo.svg/960px-VCARB_F1_logo.svg.png?_=20240125023910",
+    "car": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDhmCTvC_cPgn6VW7w50f7zLajIY9gqys1jg&s",
+    "drivers": ["Liam Lawson", "Arvid Lindblad"],
+    "principal": "Laurent Mekies",
+    "ceo": "Peter Bayer"
+  },
+  {
+    "name": "Audi F1 Team",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Audif1.com_logo17_%28cropped%29.svg/960px-Audif1.com_logo17_%28cropped%29.svg.png",
+    "car": "https://motoringmatters.ie/wp-content/uploads/2022/08/A224466_medium-scaled.jpg",
+    "drivers": ["Nico Hulkenberg", "Gabriel Bortoleto"],
+    "principal": "Mattia Binotto",
+    "ceo": "Alessandro Alunni Bravi"
+  },
+  {
+    "name": "MoneyGram Haas F1 Team",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/TGR_Haas_F1_Team_Logo_%282026%29.svg/960px-TGR_Haas_F1_Team_Logo_%282026%29.svg.png",
+    "car": "https://www.racefans.net/wp-content/uploads/2026/01/racefansdotnet-24-01-23-11-20-00-6-10-Photos-16x9-EO.0007.jpg",
+    "drivers": ["Esteban Ocon", "Oliver Bearman"],
+    "principal": "Ayao Komatsu",
+    "ceo": "Guenther Steiner"
+  },
+  {
+    "name": "Cadillac F1 Team",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Cadillac_Formula_1_Team_Logo_%282025%29.svg/500px-Cadillac_Formula_1_Team_Logo_%282025%29.svg.png?_=20250506125831",
+    "car": "https://s3-newsifier.ams3.digitaloceanspaces.com/grandprix247.com/images/2026-02/cadillac-f1-team-livery-launch-2026-698956133f738.jpg",
+    "drivers": ["Sergio Perez", "Valtteri Bottas"],
+    "principal": "TBA",
+    "ceo": "TBA"
+  }
+]

@@ -1,0 +1,429 @@
+/* style.css */
+/* ==================== RESET & BASE ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: #0a0a0a;
+    color: #f1f1f1;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* ==================== HEADER ==================== */
+header {
+    background: #111111;
+    border-bottom: 3px solid #e10600;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: -2px;
+}
+
+.f1-icon {
+    font-size: 2.2rem;
+}
+
+nav a {
+    color: #f1f1f1;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-weight: 600;
+    transition: color 0.3s;
+    position: relative;
+}
+
+nav a:hover {
+    color: #e10600;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -4px;
+    left: 0;
+    background: #e10600;
+    transition: width 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.year-badge {
+    background: #e10600;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* ==================== HERO ==================== */
+.hero {
+    background: linear-gradient(135deg, #111111, #1a1a1a);
+    padding: 6rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(225, 6, 0, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    letter-spacing: -4px;
+    margin-bottom: 1rem;
+    background: linear-gradient(90deg, #e10600, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-btn {
+    background: #e10600;
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(225, 6, 0, 0.4);
+}
+
+.cta-btn:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 15px 25px rgba(225, 6, 0, 0.5);
+}
+
+/* ==================== TEAMS GRID ==================== */
+.teams-section {
+    padding: 4rem 0;
+    background: #111111;
+}
+
+.section-title {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #e10600;
+}
+
+.section-subtitle {
+    text-align: center;
+    margin-bottom: 3rem;
+    opacity: 0.7;
+    font-size: 1.1rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.team-card {
+    background: #1c1c1c;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.team-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 20px 40px rgba(225, 6, 0, 0.3);
+    border-color: #e10600;
+}
+
+.team-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.team-card:hover img {
+    transform: scale(1.1);
+}
+
+.team-card h3 {
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* ==================== DETAIL SECTION ==================== */
+.detail-section {
+    background: #1c1c1c;
+    border-radius: 24px;
+    margin-top: 3rem;
+    padding: 2.5rem;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    position: relative;
+    animation: slideUp 0.6s ease forwards;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#detail-name {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #e10600;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #999;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.close-btn:hover {
+    color: #e10600;
+    transform: rotate(90deg);
+}
+
+.detail-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #333;
+}
+
+.detail-btn {
+    padding: 12px 28px;
+    background: #2a2a2a;
+    color: #ddd;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.05rem;
+}
+
+.detail-btn:hover {
+    background: #3a3a3a;
+}
+
+.detail-btn.active {
+    background: #e10600;
+    color: white;
+    box-shadow: 0 5px 15px rgba(225, 6, 0, 0.4);
+}
+
+.detail-content {
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.detail-content.show {
+    opacity: 1;
+}
+
+.detail-content img {
+    max-width: 100%;
+    max-height: 420px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    object-fit: contain;
+}
+
+.detail-content ul {
+    list-style: none;
+    width: 100%;
+    max-width: 500px;
+}
+
+.detail-content li {
+    background: #2a2a2a;
+    padding: 16px 24px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.detail-content h4 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #e10600;
+    text-align: center;
+}
+
+.detail-content p {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    background: #2a2a2a;
+    padding: 2rem;
+    border-radius: 16px;
+    max-width: 500px;
+}
+
+/* ==================== REGULATIONS ==================== */
+.regulations-section {
+    padding: 5rem 0;
+    background: #0a0a0a;
+}
+
+.rules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    gap: 2.5rem;
+}
+
+.rule-card {
+    background: #1c1c1c;
+    border-radius: 20px;
+    padding: 2rem;
+    transition: transform 0.3s;
+}
+
+.rule-card:hover {
+    transform: translateY(-8px);
+}
+
+.rule-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.rule-badge {
+    padding: 4px 14px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.current {
+    background: #00c853;
+    color: #000;
+}
+
+.future {
+    background: #e10600;
+    color: #fff;
+}
+
+.rule-list li {
+    padding: 14px 0;
+    border-bottom: 1px solid #333;
+    font-size: 1.1rem;
+}
+
+.rule-list li:last-child {
+    border-bottom: none;
+}
+
+.rule-list strong {
+    display: block;
+    color: #e10600;
+    margin-bottom: 4px;
+}
+
+.reg-note {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.95rem;
+    opacity: 0.6;
+}
+
+/* ==================== FOOTER ==================== */
+footer {
+    background: #111;
+    padding: 3rem 0;
+    text-align: center;
+    border-top: 1px solid #222;
+    font-size: 0.95rem;
+}
+
+.github-link {
+    margin-top: 1rem;
+    color: #e10600;
+    font-family: monospace;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 3rem; }
+    .team-grid { grid-template-columns: 1fr 1fr; }
+    .detail-buttons { flex-direction: column; align-items: center; }
+    .rules-grid { grid-template-columns: 1fr; }
+}

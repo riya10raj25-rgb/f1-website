@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Hub • 2026 Formula 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span class="f1-icon">🏎️</span>
+                F1 HUB
+            </div>
+            <nav>
+                <a href="#teams-section">TEAMS</a>
+                <a href="#regulations">REGULATIONS</a>
+            </nav>
+            <div class="year-badge">2026 SEASON</div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <h1>THE 2026 GRID IS HERE</h1>
+            <p class="hero-subtitle">11 teams. 22 drivers. Pure speed.<br>Click any team card to explore.</p>
+            <button onclick="document.getElementById('teams-section').scrollIntoView({ behavior: 'smooth' })" class="cta-btn">
+                EXPLORE ALL TEAMS →
+            </button>
+        </div>
+    </section>
+
+    <!-- TEAMS SECTION -->
+    <section id="teams-section" class="teams-section">
+        <div class="container">
+            <h2 class="section-title">Formula 1 Teams 2026</h2>
+            <p class="section-subtitle">Click any card to view details • Hover for smooth animation</p>
+            
+            <div id="teams-grid" class="team-grid"></div>
+
+            <!-- DETAIL SECTION -->
+            <div id="detail-section" class="detail-section hidden">
+                <div class="detail-header">
+                    <h2 id="detail-name"></h2>
+                    <button id="close-detail" class="close-btn">✕</button>
+                </div>
+
+                <div class="detail-buttons">
+                    <button class="detail-btn active" data-type="logo">LOGO</button>
+                    <button class="detail-btn" data-type="car">CAR</button>
+                    <button class="detail-btn" data-type="drivers">DRIVERS</button>
+                    <button class="detail-btn" data-type="principal">TEAM PRINCIPAL</button>
+                    <button class="detail-btn" data-type="ceo">CEO</button>
+                </div>
+
+                <div id="detail-content" class="detail-content"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REGULATIONS -->
+    <section id="regulations" class="regulations-section">
+        <div class="container">
+            <h2 class="section-title">F1 Regulations</h2>
+            <div class="rules-grid">
+                <div class="rule-card">
+                    <div class="rule-header">
+                        <span class="rule-badge current">CURRENT</span>
+                        <h3>Basic Rules</h3>
+                    </div>
+                    <ul class="rule-list">
+                        <li><strong>Budget Cap</strong><br>$135 million (adjusted for inflation)</li>
+                        <li><strong>Power Unit</strong><br>1.6L V6 turbo-hybrid with ERS</li>
+                        <li><strong>Safety</strong><br>Halo, HANS, biometric monitoring, advanced crash structures</li>
+                        <li><strong>Tyres</strong><br>13-inch Pirelli with two-stop strategy in most races</li>
+                    </ul>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-header">
+                        <span class="rule-badge future">2026</span>
+                        <h3>2026 Major Changes</h3>
+                    </div>
+                    <ul class="rule-list">
+                        <li><strong>Electric Power</strong><br>50%+ electric output with larger battery</li>
+                        <li><strong>Sustainable Fuel</strong><br>100% sustainable aviation fuel (SAF)</li>
+                        <li><strong>Active Aerodynamics</strong><br>Movable front & rear wings</li>
+                        <li><strong>Chassis</strong><br>Smaller, lighter cars with simplified ground effect</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="reg-note">
+                <p>Demonstration data only • Real 2026 regulations are FIA-approved.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Full-stack F1 Demo • HTML + CSS + JS + Node.js + Express</p>
+            <p>Data fetched from <code>/teams</code> API</p>
+        </div>
+    </footer>
+</body>
+</html>
